@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "@/components/Header";
 import { ThemeProvider as Provider } from "next-themes";
 import type { Metadata } from "next";
@@ -39,7 +40,7 @@ export default function RootLayout({
           <div className="h-16 px-4">
             <Header />
           </div>
-          <div><Navbar/></div>
+          <div className="my-4"><Navbar/></div>
           <div className="h-[calc(100vh-64px)] px-4">{children}</div>
         </Provider>
       </body>
