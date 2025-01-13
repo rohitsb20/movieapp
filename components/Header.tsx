@@ -1,3 +1,4 @@
+import DarkMode from "@/components/DarkMode";
 import React from "react";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
@@ -14,7 +15,7 @@ const navigation = [
 ]
 export default function Header() {
   return (
-    <div>
+    <div className="flex justify-between items-center h-16 px-4">
       {/* LOGO */}
       <div>
         <Link href="/" className="text-rose-600 italic font-semibold text-xl">
@@ -39,6 +40,11 @@ export default function Header() {
             </Link>
           ))}
         </div>
+      </div>
+
+      {/* Dark Mode Button  */}
+      <div>
+        <DarkMode />
       </div>
     </div>
   );

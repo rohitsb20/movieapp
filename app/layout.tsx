@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import { ThemeProvider as Provider } from "next-themes";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -29,10 +30,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="h-16 px-4">
-          <Header />
-        </div>
-        <div className="h-[calc(100vh-64px)] px-4">{children}</div>
+        <Provider
+          attribute="class"
+          defaultTheme="system"
+          
+        >
+          <div className="h-16 px-4">
+            <Header />
+          </div>
+          <div className="h-[calc(100vh-64px)] px-4">{children}</div>
+        </Provider>
       </body>
     </html>
   );
