@@ -5,14 +5,16 @@ import { Button } from "@/components/ui/button";
 import { useSearchParams } from 'next/navigation';
 
 
-const items =[
-    {
-        title:'Top Rated',param:'top_rated'
-    },
-    {
-        title:'Top Trending', param:'trending'
-    }
-]
+const items = [
+  {
+    title: "Top Rated",
+    param: "fetchTopRated",
+  },
+  {
+    title: "Top Trending",
+    param: "fetchTrending",
+  },
+];
 
 export default function Navbar() {
     const searchParams = useSearchParams();
