@@ -33,7 +33,7 @@ export default async function MoviePage({ params }:{params:any}) {
           </h2>
           <p>
             {" "}
-            <span className="font-semibold">Tagline:</span> {movie.tagline}
+            <span className="font-semibold">Tagline{' '}:</span> {movie.tagline}
           </p>
           <p className="text-lg mb-3">{movie.overview}</p>
           <p className="mb-3">

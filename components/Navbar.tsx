@@ -21,7 +21,7 @@ export default function Navbar() {
     const genre = searchParams.get('genre');
 
   return (
-    <div className="bg-accent flex justify-center items-center gap-x-4">
+    <div className="bg-rose-500 flex justify-center items-center gap-x-4">
       {items.map((item) => (
         <Button  className={` ${genre === item.param ? 'bg-rose-500' : ''}`} key={item.title}>
           <Link href={`/?genre=${item.param}`}>
