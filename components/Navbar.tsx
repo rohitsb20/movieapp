@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from "@/components/ui/button";
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 
 
 const items = [
@@ -21,6 +22,7 @@ export default function Navbar() {
     const genre = searchParams.get('genre');
 
   return (
+     <Suspense fallback={<div>Loading...</div>}>
     <div className="bg-rose-500 flex justify-center items-center gap-x-4">
       {items.map((item) => (
         <Button  className={` ${genre === item.param ? 'bg-rose-500' : ''}`} key={item.title}>
@@ -30,5 +32,8 @@ export default function Navbar() {
         </Button>
       ))}
     </div>
+     </Suspense>
   );
 }
+
+
