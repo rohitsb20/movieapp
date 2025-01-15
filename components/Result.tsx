@@ -4,7 +4,7 @@ import Card from "./Card";
 interface ResultProps {
   results: Array<{
     id: string;
-    // Add other properties of result object here
+ 
   }>;
 }
 
