@@ -42,7 +42,9 @@ export default function RootLayout({
             <Header />
           </div>
           <div className="my-4"><Navbar/></div>
-          <div><Search/></div>
+      <div className="my-4">
+      <Search />
+      </div>
           <div className="h-[calc(100vh-64px)] px-4">{children}</div>
         </Provider>
       </body>

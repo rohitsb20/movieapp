@@ -2,17 +2,12 @@ import DarkMode from "@/components/DarkMode";
 import React from "react";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
-import { GiFilmSpool } from "react-icons/gi";
-import { FaTv } from "react-icons/fa";
-import { FaRegHeart } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 
 const navigation = [
   { icon: FaHome, name: "Home", href: "/" },
   { icon: FaRegUser, name: "About Us", href: "/about" },
-  { icon: GiFilmSpool, name: "Movies", href: "/movies" },
-  { icon: FaTv, name: "TV Shows", href: "/tv-shows" },
-  { icon: FaRegHeart, name: "Favorites", href: "/favorites" },
+ 
 ];
 export default function Header() {
   return (

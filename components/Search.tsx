@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { IoSearch } from "react-icons/io5";
 import { useState } from 'react';
@@ -12,8 +13,7 @@ export default function Search() {
         e.preventDefault();
    
         router.push(`/search/${search}`);
-
-        
+    };
 
   return (
     <div className="max-w-6xl  mx-auto p-4">

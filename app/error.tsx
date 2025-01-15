@@ -3,7 +3,12 @@ import React from 'react'
 import { useEffect } from 'react'
 import { IoIosArrowRoundDown } from "react-icons/io";
 import { Button } from '@/components/ui/button'
-export default function error({error , reset}) {
+interface ErrorProps {
+  error: Error;
+  reset: () => void;
+}
+
+export default function ErrorComponent({ error, reset }: ErrorProps) {
     useEffect(() => {
         console.log(error);
 
