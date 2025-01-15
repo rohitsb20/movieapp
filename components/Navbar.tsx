@@ -1,8 +1,8 @@
-
+'use client'
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import{ Button} from "@/components/ui/button"; // Adjust the import based on your project structure
+import {Button} from "@/components/ui/button"; // Adjust the import based on your project structure
 
 const items = [
   {
