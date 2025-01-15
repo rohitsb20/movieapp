@@ -3,7 +3,19 @@ import Link from "next/link";
 import { FiThumbsUp } from "react-icons/fi";
 import { Card as UICard, CardContent, CardHeader } from "@/components/ui/card";
 
-export default function Card({ result }:{result:any}) {
+interface Result {
+  id: number;
+  backdrop_path: string | null;
+  poster_path: string | null;
+  title: string;
+  name: string;
+  overview: string;
+  release_date: string;
+  first_air_date: string;
+  vote_count: number;
+}
+
+export default function Card({ result }: { result: Result }) {
   return (
     <div
       className="group cursor-pointer sm:hover:shadow-rose-500 
