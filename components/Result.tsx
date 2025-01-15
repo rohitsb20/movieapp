@@ -1,10 +1,17 @@
 import React from "react";
 import Card from "./Card";
-
 interface ResultProps {
   results: Array<{
-    id: string;
- 
+    id: number;
+    backdrop_path: string | null;
+    poster_path: string | null;
+    title: string;
+    name: string;
+    overview: string;
+    release_date: string;
+    first_air_date: string;
+    vote_count: number;
+    // Add other properties of the result object here
   }>;
 }
 
